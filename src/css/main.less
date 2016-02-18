@@ -6,12 +6,13 @@ body {
 
 
 .container {
-  width: 1228px;
+  width: 1170px;
   margin: 0 auto;
 }
 
 .main-head {
   background: #46a493 url(../img/header-bg.jpg) no-repeat center;
+  background-size: cover;
   h1 {
     text-align: center;
     color: #fefefe;
@@ -64,16 +65,21 @@ body {
   }
 }
 
+.head-social {
+  width: 370px;
+  margin: 0 auto;
+}
 .social-btn {
   display: inline-block;
   width: 54px;
   height: 54px;
   border-radius: 50px;
-  border: 2px none #fff;
-  background: url('../img/social-icon.png') no-repeat;
-  box-sizing: border-box;
+  border: 2px solid transparent;
+  background: url(../img/icons.png) no-repeat;
+
   &:hover {
-    border: 2px solid #fff;
+    border-color: #fff;
+    transition: 1s;
 
   }
 }
@@ -97,8 +103,200 @@ body {
   background-position: 0 0;
 }
 
+.reference {
+  margin: 30px auto;
+  vertical-align: middle;
+  text-align: justify;
+  line-height: 0;
+  img{
+    margin-right: 50px;
+  }
+}
+
+
+.content {
+  background:  url(../img/dev.png) no-repeat;
+}
+
+.content-item {
+  display: inline-block;
+  width: 350px;
+  margin-right: 50px;
+  margin-bottom: 85px;  
+  &:last-child {
+    margin-right: 0; 
+  }
+  h2 {
+    margin-bottom: 30px;  
+    text-transform: uppercase;
+    color: #262626;
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 30px; 
+    text-align: left; 
+  }
+  p{
+    font-style: 13px; 
+    line-height: 23px;
+    color: #68686b; 
+  }
+}
+
+.content-btn {
+  display: inline-block; 
+  padding: 10px 15px;
+  background: #262626; 
+  color: #fcfcfc;
+  font-size: 13px;  
+  line-height: 23px;
+  text-decoration: none;
+  font-weight: 700; 
+ &:hover {
+  background-color: #4ca893;
+  a {
+    &:link,
+    &:visited,
+    &:hover,
+    &:active{
+      color: #fcfcfc;
+      }
+    }
+  }
+}
+
+.subscribe-block {
+  position: relative;
+  background-color: #51aa92;
+  color: #fefefe;
+  padding-top: 90px; 
+  padding-bottom: 100px; 
+  h2 {
+    display: inline-block;  
+    width: 250px;
+    font-size: 30px; 
+    font-weight: 700;
+    vertical-align: top;
+    margin-right: 50px;  
+  }
+  p {
+    display: inline-block; 
+    width: 700px; 
+  }
+}
+
+.subscribe-form {
+  position: absolute;
+  bottom: -30px;
+  left: 50%;
+  margin-left: -285px;
+  width: 570px;
+  background-color: #fff;
+  border: 1px solid #bcbcbc;
+  padding: 10px;
+  box-shadow: 0px 5px 150px -30px #000;
+
+  input {
+    color: #000;
+    border: none;
+    float: left;
+    font-size: 18px;
+    vertical-align: middle;
+    padding: 20px;
+    line-height: 20px;
+    width: 390px;
+    &:focus {
+      outline: none;
+    }
+  }
+  button {
+    float: right;
+    background: #51aa92;
+    text-transform: uppercase;
+    padding: 15px 20px;
+    border: none;
+    border-radius: 2px;
+    border-bottom: 3px solid #309b97;
+    font-size: 16px;
+    font-weight: 700;
+  }
+}
+
+
+.about-us-block {
+  margin-top: 160px;  
+}
+
+.about-us_left-column {
+  width: 470px;
+  float:left;
+  h2 {
+    display: inline-block;  
+    width: 250px;
+    font-size: 30px; 
+    font-weight: 700;
+    vertical-align: top;
+    margin-right: 80px;  
+  } 
+  p {
+    text-indent: 35px;
+  }
+}
+.about-us_right-column {
+  position: relative;
+  width: 570px;
+  float: right;
+  &:before {
+    position: absolute;
+    top: 17px;
+    left: -100px;
+    display: block;
+    content:"";
+    width: 91px;
+    height: 88px;
+    background: url(../img/quote-marker.png);
+  }
+}
+.quote-peginator {
+  float: right;
+}
+.quote-peginator-btn {
+  display: inline-block;
+  width: 24px;
+  height: 24px;  
+  background: url(../img/icons.png) no-repeat;
+  border: none;
+  &.prev {
+    background-position: -24px -349px;
+    &:disabled {
+      background-position: -0px -349px;
+    }
+  }
+  &.next {
+    background-position: -24px -324px;
+    &:disabled {
+    background-position: -0px -324px;
+    }
+  }
+}
+
+.last-tweet {
+  background-color: #51aa92;
+  height: 330px;
+}
+
+.main-footer {
+  color: #9b9b9b;
+  font-size: 14px;
+  line-height: 24;
+  background-color: #fff;
+  p {
+    margin-top: 30px;
+  }
+}
 
 .clearfix:after {
+  width: 24px;
+  height: 24px;
   content: "";
   display: table;
   clear: both;

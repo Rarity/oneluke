@@ -1,0 +1,93 @@
+body {
+  font-family: 'Raleway', sans-serif;
+  font-size: 15px;
+  line-height: 25px;
+}
+.container {
+  width: 1228px;
+  margin: 0 auto;
+}
+.main-head {
+  background: #46a493 url(../img/header-bg.jpg) no-repeat center;
+}
+.main-head h1 {
+  text-align: center;
+  color: #fefefe;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 100;
+  margin-bottom: 85px;
+}
+.text-bold {
+  font-weight: 700;
+}
+.logo {
+  width: 146px;
+  margin: 0 auto;
+}
+.logo img {
+  margin-top: 230px;
+  margin-bottom: 65px;
+}
+.timer {
+  width: 770px;
+  margin: 0 auto;
+  margin-bottom: 140px;
+}
+.timer-item {
+  display: inline-block;
+  margin-right: 52px;
+  width: 144px;
+  height: 144px;
+  border: 3px solid #fff;
+  border-radius: 100px;
+  color: #fefefe;
+  text-align: center;
+  vertical-align: middle;
+  text-transform: uppercase;
+  line-height: 24px;
+}
+.timer-item:last-child {
+  margin-right: 0;
+}
+.timer-item .timer-number {
+  margin-top: 30px;
+  margin-bottom: 35px;
+  display: block;
+  font-size: 72px;
+}
+.social-btn {
+  display: inline-block;
+  width: 54px;
+  height: 54px;
+  border-radius: 50px;
+  border: 2px none #fff;
+  background: url('../img/social-icon.png') no-repeat;
+  box-sizing: border-box;
+}
+.social-btn:hover {
+  border: 2px solid #fff;
+}
+.social-btn-fb {
+  background-position: 0 -108px;
+}
+.social-btn-tw {
+  background-position: 0 -270px;
+}
+.social-btn-gp {
+  background-position: 0 -162px;
+}
+.social-btn-dr {
+  background-position: 0 -54px;
+}
+.social-btn-in {
+  background-position: 0 -216px;
+}
+.social-btn-be {
+  background-position: 0 0;
+}
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+  overflow: hidden;
+}
